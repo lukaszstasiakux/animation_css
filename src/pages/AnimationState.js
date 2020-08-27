@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import {moveBall} from "../helpers/animation";
 import Ball from "../components/Ball";
-import {Content,SingleWrapper} from '../components/common'
+import {Content,SingleWrapper} from '../components/common';
+import Button from "../components/Button";
 
 
 const AnimationState = props => {
-	const [aniamtion,changeParam] = useState([
+	const [animation,changeParam] = useState([
 		'',
 	])
 	
@@ -22,10 +23,10 @@ const AnimationState = props => {
 
 	return(
 		<SingleWrapper>
-		<div onClick={play}>play</div>
-		<div onClick={paused}>paused</div>
+		<Button onClick={() => play()} label="play"/>
+		<Button onClick={() => paused()} label="pause"/>
 			<Content>
-					<Ball animation={aniamtion[0]} label="play / pause"/>
+					<Ball animation={animation[0]} label="play / pause"/>
 			</Content>
 		</SingleWrapper>
 			)

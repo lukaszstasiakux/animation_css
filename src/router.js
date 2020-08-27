@@ -26,7 +26,7 @@ const AppRouter = props => {
 						<Route path="/timing" component={AnimationTiming} exact={true} />
 						<Route path="/delay" component={AnimationDelay} exact={true} />
 						<Route path="/iteration" component={AnimationIteration} exact={true} />
-						<Route path="/diretion" component={AnimationDirection} exact={true} />
+						<Route path="/direction" component={AnimationDirection} exact={true} />
 						<Route path="/fill" component={AnimationFill} exact={true} />
 						<Route path="/state" component={AnimationState} exact={true} />
 						<Route path="/origin" component={AnimationOrigin} exact={true} />

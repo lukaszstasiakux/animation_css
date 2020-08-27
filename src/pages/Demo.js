@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {DemoContent,SingleWrapper} from '../components/common';
-import {demoLeft,demoRight} from '../helpers//animation';
-// import Pendulum from '../components/Pendulum';
+import {demoLeft,demoRight} from '../helpers/animation';
 
 const Pendulum = styled.div`
 	width:4px;
@@ -29,7 +28,6 @@ const Pendulum = styled.div`
 		animation-fill-mode:both;
 		animation-iteration-count: infinite;
 		animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);	
-		/* animation-timing-function:ease-in-out */
 	}
 	&:last-child{
 		animation-name: ${demoRight};
@@ -38,7 +36,6 @@ const Pendulum = styled.div`
 		animation-duration:2s;
 		animation-fill-mode:both;
 		animation-iteration-count: infinite;
-		/* animation-timing-function:ease-in-out; */
 		animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);	
 	}
 `

@@ -20,7 +20,7 @@ export const Area = styled.div`
 	justify-content: center;
 `
 
-export const PageContet = styled.div`
+export const PageContent = styled.div`
 	max-width: 800px;
 	width:100%;
 	display:flex;
@@ -35,14 +35,14 @@ export const SingleWrapper = styled.div`
 	max-width:800px;
 	width:100%;
 	display:flex;
-	justify-content:center;
-	flex-direction:row;
+	align-items:center;
+	flex-direction:column;
 `
 export const DemoContent = styled.div`
 border-top:6px solid #fdfdfd;
 	max-width: 400px;
   display:flex;
-	flex-direction:row;
 	margin-top:50px;
 	justify-content:center;
+	flex-direction:row;
 `

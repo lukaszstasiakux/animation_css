@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import {moveBall} from "../helpers/animation";
 import Ball from "../components/Ball";
-import {Content,SingleWrapper} from '../components/common'
+import {Content,SingleWrapper} from '../components/common';
+import Button from "../components/Button";
 
 
 const AnimationIteration = props => {
-	const [aniamtion,changeParam] = useState([
+	const [animation,changeParam] = useState([
 		'','','',
 	])
 	
@@ -19,11 +20,11 @@ const AnimationIteration = props => {
 
 	return(
 		<SingleWrapper>
-		<div onClick={onClick}>play</div>
+			<Button onClick={() => onClick()} label="play"/>
 			<Content>
-					<Ball animation={aniamtion[0]} label="1"/>
-					<Ball animation={aniamtion[1]} label="3"/>
-					<Ball animation={aniamtion[2]} label="infinite"/>
+					<Ball animation={animation[0]} label="1"/>
+					<Ball animation={animation[1]} label="3"/>
+					<Ball animation={animation[2]} label="infinite"/>
 			</Content>
 		</SingleWrapper>
 			)

@@ -17,6 +17,14 @@ export const splashBall = keyframes`
 		height:2px;
 	}
 `
+export const rotateCube = keyframes`
+	0%{
+		transform:rotate(0deg)
+	}
+	100%{
+		transform:rotate(360deg)
+	}
+`
 export const demoLeft = keyframes`
 	0%{
 		transform:rotate(0deg)

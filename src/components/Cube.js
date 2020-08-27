@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ComponentBall = styled.div`
+const ComponentCube = styled.div`
 	width:30px;
 	height:30px;
 	background-color:#fdfdfd;
-	border-radius:50%;
 	left:${p => p.left ? p.left : 0};
 	top:25px;
 	position:absolute;
@@ -18,7 +17,7 @@ const ComponentBall = styled.div`
 	animation-play-state: ${p => p.animation.playState ? p.animation.playState : 'play'};
 	animation-timing-function: ${p => p.animation.timing ? p.animation.timing : 'linear'};	
 `
-const WrapperBall = styled.div`
+const WrapperCube = styled.div`
 	display:flex;
 	flex-direction:column;
 	width:100%;
@@ -27,7 +26,7 @@ const WrapperBall = styled.div`
 	margin-bottom:20px;
 	height:55px;
 `
-const LabelBall = styled.div`
+const LabelCube = styled.div`
 	color:#fdfdfd;
 	font-size:16px;
 	margin-bottom:10px;
@@ -35,12 +34,12 @@ const LabelBall = styled.div`
 
 const Ball = props => {
 	return(
-		<WrapperBall>
-			<LabelBall>
+		<WrapperCube>
+			<LabelCube>
 				{props.label}
-			</LabelBall>
-			<ComponentBall {...props}/>
-		</WrapperBall>
+			</LabelCube>
+			<ComponentCube {...props}/>
+		</WrapperCube>
 	)
 }
 

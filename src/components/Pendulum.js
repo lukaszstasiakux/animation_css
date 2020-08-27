@@ -28,7 +28,6 @@ const ComponentPendulum = styled.div`
 `
 
 const Pendulum = props => {
-	// console.log(props)
 	return(
 		<ComponentPendulum {...props}/>
 	)
