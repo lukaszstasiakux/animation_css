@@ -6,6 +6,7 @@ const ButtonWrapper = styled.div`
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	margin: 0px 10px;
 `
 const ButtonElement = styled.div`
 	margin: 10px auto;
