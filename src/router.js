@@ -17,7 +17,7 @@ import Demo from './pages/Demo';
 
 const AppRouter = props => {
   return (
-		<BrowserRouter>
+		<BrowserRouter basename={'/animations/'}>
 			<AppWrapper>
 					<Switch>
 						<Route path="/" component={PageIndex} exact={true} />
